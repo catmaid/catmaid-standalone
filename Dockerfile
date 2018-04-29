@@ -11,5 +11,5 @@ RUN service nginx restart
 ENTRYPOINT ["/home/scripts/docker/catmaid-entry.sh"]
 
 EXPOSE 80
-WORKDIR /home/django/projects/mysite
+WORKDIR /home/django/projects
 CMD ["standalone"]

@@ -51,18 +51,24 @@ Before updating the images, make sure to stop the containers using `docker stop
 catmaid` (if you didn't used `--name` with `docker run`, use the container
 ID instead of "catmaid").
 
-First update the CATMAID base image::
+First update the CATMAID base image:
 
-  docker pull catmaid/catmaid
+```
+docker pull catmaid/catmaid
+```
 
-Then, to update `catmaid-standalone` (regular Docker) use::
+Then, to update `catmaid-standalone` (regular Docker) use:
 
-  docker pull catmaid/catmaid-standalone
+```
+docker pull catmaid/catmaid-standalone
+```
 
 If no previous state should be persisted, the docker contaienr can be started
-normally again::
+normally again:
 
-  docker run -p 8000:80 --name catmaid catmaid/catmaid-standalone
+```
+docker run -p 8000:80 --name catmaid catmaid/catmaid-standalone
+```
 
 If you instead want to restore from a previously taken backup, see the "Backup
 and restore" section above for how to run the image.

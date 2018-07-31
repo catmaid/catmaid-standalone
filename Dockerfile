@@ -1,4 +1,4 @@
-FROM catmaid/catmaid
+FROM catmaid/catmaid:stable
 LABEL maintainer="Tom Kazimiers <tom@voodoo-arts.net>"
 
 RUN service postgresql restart
